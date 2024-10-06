@@ -1,0 +1,419 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* NavBar ---------------------------------------------------------------------------------------------- */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.5s ease-in-out, background-color 0.3s ease,
+    color 0.3s ease; /* Smooth transition */
+  z-index: 1000;
+  padding: 40px;
+  padding-left: 70px;
+  padding-right: 60px;
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out; /* Smooth transition for hiding */
+}
+
+.navbar.visible {
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.navBar-buttons-container {
+  display: flex;
+  gap: 20px;
+}
+
+.navBar-button {
+  color: inherit; /* Button text will inherit navbar color */
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navBar-button:hover {
+  transform: scale(1.08);
+}
+
+.logo {
+  font-size: 20px;
+}
+
+/* Home  ---------------------------------------------------------------------------------------------- */
+.home-section {
+  background-color: #909595; /* Dark gray background */
+  color: white; /* Text color */
+  height: 100vh; /* Full viewport height */
+  width: 110%;
+  position: relative; /* Relative for absolute children */
+}
+
+.jobTitle {
+  position: absolute;
+  top: 38%; /* Adjust top position */
+  right: 8%; /* Position it freely on the page */
+  font-size: 30px;
+  color: #ffffff;
+  display: flex; /* Make it a flex container */
+  flex-direction: column; /* Stack items vertically */
+  gap: 0; /* Set gap to 0 to reduce spacing */
+  padding-right: 90px;
+}
+.jobTitle p {
+  margin: 0; /* Remove default margin */
+}
+
+.locationText {
+  position: absolute;
+  top: 40%; /* Adjust top position */
+  left: 5%; /* Position it freely on the page */
+  font-size: 18px;
+  color: #ffffff;
+  display: flex; /* Make it a flex container */
+  flex-direction: column; /* Stack items vertically */
+  gap: 0; /* Set gap to 0 to reduce spacing */
+}
+.locationText p {
+  margin: 0; /* Remove default margin */
+}
+
+.nameMovingText {
+  position: absolute;
+  top: 50%; /* Fixed position from the top */
+  color: #ffffff;
+  font-size: 200px;
+  font-weight: normal;
+  white-space: nowrap;
+  padding-left: 80px;
+}
+
+/* About --------------------------------------------------------------------------------------- */
+/* General styling remains the same, focusing on the icon hover effect */
+
+/* About Section */
+.about-section {
+  background-color: #ffffff;
+  height: 58vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  position: relative;
+}
+
+.iLoveText {
+  font-size: 48px;
+  font-weight: lighter;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.aboutMeText {
+  color: #909595;
+  font-size: 16px;
+  padding-left: 280px; /* Match the padding with Projects section */
+  margin-top: 50px;
+  text-align: left;
+  font-weight: normal;
+}
+.whyCSTparagraph {
+  width: 600px;
+  font-size: 25px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Icons Styling */
+.icon-container {
+  display: flex;
+  gap: 60px; /* Space between icons */
+  margin-top: 50px;
+
+  justify-content: center;
+}
+
+.icon {
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Transition for icon color */
+}
+
+/* Hover effect for the icons */
+.icon-name {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show the icon name on hover */
+.icon:hover .icon-name {
+  opacity: 1;
+  transform: translateX(-50%) translateY(10px); /* Slight movement upwards */
+}
+
+/* Optional: Change icon color on hover */
+.icon:hover {
+  transform: scale(1.2); /* Icon grows on hover */
+  transition: transform 0.3s ease, color 0.2s ease;
+}
+
+/* Projects ------------------------------------------------------------------------------------ */
+.projects-section {
+  background-color: #ffff; /* Blue background */
+  height: 65vh; /* Full viewport height */
+  width: 100%;
+  display: flex;
+  align-items: flex-start; /* Center content vertically */
+  justify-content: flex-start; /* Center content horizontally */
+  padding: 20px; /* Padding inside sections */
+  margin: 0;
+}
+.recentWorkText {
+  color: #909595;
+  font-size: 16px;
+  padding-left: 100px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  text-align: left; /*align text to the left*/
+  font-weight: normal; /* Ensure the text is not bold */
+}
+
+/* Container to arrange buttons vertically */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 22px; /* Space between buttons */
+  padding-left: 200px;
+}
+
+/* Button styling for projects */
+.project-button {
+  color: #252525;
+  cursor: pointer;
+  padding: 6px;
+  font-size: 50px;
+  border: none;
+  background: none;
+  text-align: left;
+  padding-left: 100px;
+  transition: transform 0.2s ease-in-out; /* Add smooth transition */
+}
+
+/* Expand button size on hover */
+.project-button:hover {
+  transform: scale(1.05); /* Increase the button size on hover */
+}
+
+/* Horizontal line (divider) styling */
+.divider {
+  width: 200%; /* Adjust width of the line */
+  border: 0.5px solid #ddd;
+  background-color: #909595;
+  margin: 10px 0;
+  border-radius: 10px;
+  margin-left: 0px; /* Keeps the line position fixed while moving text/buttons */
+}
+
+/* Case Studies ------------------------------------------------------------------------------- */
+
+/* Case Studies ------------------------------------------------------------------------------- */
+
+.caseStudies-section {
+  background-color: #ffff; /* Blue background */
+  height: 90vh; /* Full viewport height */
+  width: 100%;
+  display: flex;
+  align-items: flex-start; /* Center content vertically */
+  justify-content: flex-start; /* Center content horizontally */
+  padding: 20px; /* Padding inside sections */
+  margin: 0;
+}
+
+.caseStudiesText {
+  color: #909595;
+  font-size: 16px;
+  padding-left: 100px; /* Match the padding with Projects section */
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: normal;
+}
+
+/* Container to arrange buttons vertically */
+.button-container2 {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 22px; /* Space between buttons */
+  padding-left: 200px; /* Match padding with Projects section */
+}
+
+/* Button styling for case studies */
+.casest-button {
+  color: #252525;
+  cursor: pointer;
+  padding: 6px;
+  font-size: 50px;
+  border: none;
+  background: none;
+  text-align: left;
+  padding-left: 100px; /* Match padding with Projects section */
+  transition: transform 0.2s ease-in-out; /* Add smooth transition */
+}
+
+/* Expand button size on hover */
+.casest-button:hover {
+  transform: scale(1.05); /* Increase the button size on hover */
+}
+
+/* Horizontal line (divider) styling */
+.divider2 {
+  width: 102%; /* Match width with Projects section */
+  border: 0.5px solid #ddd;
+  background-color: #909595;
+  margin: 10px 0;
+  border-radius: 10px;
+  margin-left: 0px; /* Match margin with Projects section */
+}
+
+/* Contacts Section --------------------------------------------------------------------------------- */
+/* Contacts Section --------------------------------------------------------------------------------- */
+.contact-section {
+  background-color: #909595; /* Light gray background */
+  color: white;
+  height: 50vh; /* Adjust height if necessary */
+  width: 110%; /* Set width back to 100% for consistent layout */
+  display: flex;
+  padding: 0; /* Adjust padding to avoid excess space */
+  justify-content: flex-start; /* Align items to the left */
+  box-sizing: border-box;
+  align-items: center; /* Vertically center content */
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center text, icons, and image vertically */
+  align-items: flex-start; /* Align items to the start */
+  gap: 0px; /* Space between each element */
+  padding-left: 350px; /* Keep the padding */
+  margin-bottom: 20px; /* Increase distance from text to contact form */ /* New margin for spacing */
+}
+
+.ContactMeTEXT {
+  color: #ffffff;
+  font-size: 50px;
+  text-align: left; /* Align text to the left */
+  font-weight: normal;
+}
+
+.Text {
+  gap: 5px;
+}
+
+.lmmhTEXT {
+  font-size: 40px;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* Space between icons */
+  color: #f0f0f0;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%; /* Set the form width */
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-left: 150px; /* Move the form slightly to the left */
+  margin-top: 20px; /* Add margin-top for additional space above the contact form */ /* New margin for spacing */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 95.5%;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background-color: #000000;
+  color: #f0f0f0;
+}
+
+.contact-left a {
+  text-decoration: none; /* Remove underline */
+}
+
+.contact-icon {
+  font-size: 60px;
+  color: white; /* Ensure the icons are white */
+  transition: transform 0.3s ease, color 0.2s ease;
+}
+
+.contact-icon:hover {
+  transform: scale(1.2); /* Icon grows on hover */
+  color: #ffffff; /* Maintain the highlight color */
+}
