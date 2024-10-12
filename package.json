@@ -1,11 +1,14 @@
 {
+  "homepage": "https://daasfab.github.io/eportfolio-Daulet",
   "name": "portfolio_website_v1",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "predeploy": "npm run build",
     "build": "tsc -b && vite build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"
   },

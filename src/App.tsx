@@ -5,7 +5,7 @@ import About from "./About"; // Import About component
 import Projects from "./Projects"; // Import Projects component
 import CaseStudies from "./CaseStudies"; // Import CaseStudies component
 import Contact from "./Contact"; // Import Contact component
-import NavBar from "./navBar"; // Adjust path accordingly
+import NavBar from "./NavBar"; // Adjust path accordingly
 
 import "./App.css"; // Import the CSS
 
