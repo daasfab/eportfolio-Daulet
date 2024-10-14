@@ -1,8 +1,11 @@
 # My E-Portfolio Website
 
-**Find it [here](https://eportfolio-daulet-v2.vercel.app/)** !
+**Find it [here](https://eportfolio-daulet-v2.vercel.app/)** 👈 !
 
 // *Feedback and Constructive Criticism is Welcomed! Please report any bugs/issues found in my email under my profile!*
+
+<br>
+<br>
 
 # React + TypeScript + Vite
 
