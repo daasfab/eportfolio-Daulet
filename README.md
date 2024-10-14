@@ -1,8 +1,11 @@
 # My E-Portfolio Website
 
-**Find it [here](https://eportfolio-daulet-v2.vercel.app/)** 👈 !
+<br>
+<br>
 
-// *Feedback and Constructive Criticism is Welcomed! Please report any bugs/issues found in my email under my profile!*
+**Find the live website [here](https://eportfolio-daulet-v2.vercel.app/)** 👈 !
+
+// *Feedback and Constructive Criticism is Welcomed! Please report any bugs/issues found through my email under my profile!*
 
 <br>
 <br>
