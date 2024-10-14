@@ -1,3 +1,9 @@
+# My E-Portfolio Website
+
+**Find it [here](https://eportfolio-daulet-v2.vercel.app/)** !
+
+// *Feedback and Constructive Criticism is Welcomed! Please report any bugs/issues found in my email under my profile!*
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
